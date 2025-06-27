@@ -1,57 +1,355 @@
+<div class="availability-banner">
+    📢 Disponible immédiatement – Recherche active
+</div>
+
 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Pape Semou NDAO - Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Samadou Kodon - Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Chart.js pour les visualisations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <!-- Barre de navigation -->
     <header>
-        <img src="img/profile.jpg" alt="Photo de profil" class="profile-pic">
-        <h1>Pape Semou NDAO</h1>
-        <p>Data Analyst passionné par la finance, les données et les visualisations interactives.</p>
         <nav>
-            <a href="#about">À propos</a>
-            <a href="#skills">Compétences</a>
-            <a href="#projects">Projets</a>
-            <a href="#contact">Contact</a>
+            <div class="logo">Samad Kodon</div>
+<ul class="nav-links">
+    <li><a href="#home">Accueil</a></li>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why-me">Pourquoi moi ?</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#streamlit-apps">Apps</a></li>
+    <li><a href="#experience">Expérience</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+            
+            <div class="burger">
+    <i class="fas fa-bars"></i>
+</div>
+            <div class="mode-switch">
+                <i class="fas fa-moon"></i>
+            </div>
         </nav>
     </header>
+    
 
-    <section id="about">
-        <h2>À propos</h2>
-        <p>Data Analyst / Data Engineer avec un double parcours en économie quantitative et en data science. Spécialiste des environnements Azure, Power BI et Python.</p>
-    </section>
+   <!-- Section Accueil -->
+<section id="home" class="home">
+    <div class="home-content">
+        <div class="home-text">
+            <h1 class="animated-title">Je transforme les données en leviers de performance.</h1>
+            <h2>🎯 Data Analyst – Dashboards Impactants, Segmentation & Modélisation Prédictive</h2>
+            <div class="home-buttons">
+            </div>
+        </div>
+        <div class="home-photo">
+            <img src="https://avatars.githubusercontent.com/u/121679170?s=400&u=0e92c71ca881aa8e93c558c7bd982a86d1954c97&v=4" alt="Photo de Samad Kodon">
+        </div>
+    </div>
+</section>           
 
-    <section id="skills">
-        <h2>Compétences</h2>
+    <!-- Section À propos -->
+    <section id="about" class="about">
+  <h2>À propos de moi</h2>
+
+   <p style="text-align: center; max-width: 750px; margin: 0 auto 30px auto;">
+  🎓 Data Analyst avec une double formation en <strong>data science</strong> et <strong>économie quantitative</strong>, je me spécialise dans la transformation de données complexes en leviers de performance pour les entreprises.
+  <br><br>
+  Fort de plus de 2 ans d’expérience (stage chez CANAL+, poste en CDI chez Gozem), j’ai accompagné les équipes métiers dans le suivi de la performance, la prédiction du churn, l’automatisation des reportings et la création de dashboards interactifs.
+  <br><br>
+  Je maîtrise chaque étape du cycle de la donnée : de l’extraction, passant par l’analyse jusqu'a la data storytelling pour l’aide à la décision.
+  <br><br>
+  🎯 Mon objectif ? <strong>Transformer les données en actions concrètes</strong>, grâce à des outils simples, fiables et compréhensibles.
+</p>
+        
         <ul>
-            <li>Python / SQL / SAS</li>
-            <li>Azure Data Lake / Databricks / Snowflake</li>
-            <li>Power BI / Streamlit</li>
-            <li>APIs REST / ETL / Big Data</li>
-        </ul>
-    </section>
+        <li><strong>🎯 CDI :</strong> Prêt à m'engager sur des projets data long terme à fort impact, en apportant rigueur et vision business.</li>
+        <li><strong>🚀 Freelance :</strong> Disponible pour missions courtes ou longues, avec une approche agile, réactive et orientée résultats.</li>
+       <li><strong>📊 Expertises clés :</strong> Analyse exploratoire, tableaux de bord Power BI, automatisation de reporting, segmentation client, KPI business, modélisation prédictive (scoring, churn), SQL & Python.</li>
+        <li><strong>📍 Basé à Paris</strong> – travail à distance ou hybride possible.</li>
+        <li><strong>⏳ URGENCE :</strong> En recherche active d’un contrat (CDI, CDD, alternance ou mission).</li>
+    </ul>
+<div class="cv-section">
+       <a href="BUSINESS & DATA ANALYST_Samadou_KODON.pdf" download class="button cv-button">Télécharger mon CV</a>
+        </div>
+    </div>
+</section>
+    
+<!-- Section Services freelance -->
+    <section id="services" class="services">
+  <h2>Services Freelance</h2>
+  <p style="text-align:center; max-width: 700px; margin: 0 auto 30px auto;">
+    En parallèle de ma recherche d’un poste, j’accompagne également les entreprises et indépendants dans leurs projets data à fort impact, en tant que freelance Data Analyst.
+    <br><br>
+    Vous avez besoin d’un tableau de bord, d’une analyse ciblée ou d’un petit pipeline automatisé ? Parlons-en !
+  </p>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>📊 Tableaux de bord</h3>
+      <p>Je crée des dashboards clairs et interactifs sur Power BI ou Streamlit, avec vos KPIs clés, pour faciliter la prise de décision.</p>
+    </div>
+    <div class="service-card">
+      <h3>📈 Analyses ciblées</h3>
+      <p>Exploration de données, analyse clients, suivi d’indicateurs RH ou financiers : je vous aide à comprendre et valoriser vos données.</p>
+    </div>
+    <div class="service-card">
+      <h3>⚙️ Automatisation & reporting</h3>
+      <p>Je mets en place des scripts simples pour automatiser vos extractions, vos rapports ou vos alertes hebdo.</p>
+    </div>
+    <div class="service-card">
+      <h3>💡 Preuve de concept (POC)</h3>
+      <p>Vous avez une idée mais pas encore d’équipe data ? Je construis un premier livrable rapidement pour tester et convaincre.</p>
+    </div>
+  </div>
+</section>
 
-    <section id="projects">
-        <h2>Projets</h2>
-        <ul>
-            <li><a href="https://github.com/psndao/mon_projet_ml" target="_blank">Analyse de sentiments IMDb avec LSTM</a></li>
-            <li><a href="https://github.com/psndao/bigdata" target="_blank">Projet Big Data - Hive & MapReduce</a></li>
-        </ul>
-    </section>
+    
+  <!-- Section Pourquoi Moi -->  
+<section id="why-me" class="why-me">
+  <h2>Pourquoi moi ?</h2>
+  <div class="why-grid">
+    <div class="why-card">
+      <h3>🎯 Opérationnel dès le départ</h3>
+      <p>Je sais cadrer rapidement un besoin métier, structurer les données et livrer un premier dashboard ou prototype en quelques jours.</p>
+    </div>
+    <div class="why-card">
+      <h3>⚡ Productivité & automatisation</h3>
+      <p>Je réduis le temps de reporting et d’analyse grâce à l’automatisation avec Python, SQL, Power BI ou Streamlit.</p>
+    </div>
+    <div class="why-card">
+      <h3>📊 Esprit analytique orienté business</h3>
+      <p>Chaque projet est conçu pour générer des décisions actionnables : pilotage des KPIs, suivi des effectifs, churn, segmentation client, etc.</p>
+    </div>
+    <div class="why-card">
+      <h3>💡 Culture data + compréhension métier</h3>
+      <p>Formé en data science et en économie quantitative, je fais le lien entre la technique et les enjeux stratégiques des entreprises.</p>
+    </div>
+  </div>
+</section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email : <a href="mailto:papesemoundao2016@gmail.com">papesemoundao2016@gmail.com</a></p>
-        <p><a href="cv_pape_ndao.pdf" target="_blank">Télécharger mon CV</a></p>
-        <p><a href="https://linkedin.com/in/papesemoundao" target="_blank">Mon LinkedIn</a></p>
-    </section>
+    <!-- Section Compétences -->
+<section id="skills" class="skills">
+    <h2>Compétences</h2>
+    <div class="skills-grid">
 
+        <div class="skill-category">
+            <h3>Analyse de Données & Programmation</h3>
+            <p>Manipulation avancée des données avec Python, R, SQL. Extraction, transformation, modélisation.</p>
+            <div class="skill-icons">
+                <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
+                <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R">
+                <img src="https://img.shields.io/badge/SAS-004B87?style=for-the-badge&logo=sas&logoColor=white" alt="SAS">
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Machine Learning & Prédictif</h3>
+            <p>Développement de modèles supervisés et non supervisés pour la classification, régression, segmentation.</p>
+            <div class="skill-icons">
+                <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn">
+                <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
+                <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+                <img src="https://img.shields.io/badge/NLP-4D4D4D?style=for-the-badge&logo=natural-language-processing&logoColor=white" alt="NLP">
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Visualisation & Data Storytelling</h3>
+            <p>Conception de dashboards interactifs, rapport d’analyse visuelle pour les métiers et décideurs.</p>
+            <div class="skill-icons">
+                <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black" alt="Power BI">
+                <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau">
+                <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib">
+                <img src="https://img.shields.io/badge/Seaborn-46629E?style=for-the-badge&logo=seaborn&logoColor=white" alt="Seaborn">
+                <img src="https://img.shields.io/badge/Dataiku-4D4D4D?style=for-the-badge&logo=dataiku&logoColor=white" alt="Dataiku">
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Outils & Infrastructure</h3>
+            <p>Gestion de projets, pipelines de données, versionnage, cloud computing et automatisation.</p>
+            <div class="skill-icons">
+                <img src="https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white" alt="Snowflake">
+                <img src="https://img.shields.io/badge/ETL-FF6F00?style=for-the-badge&logo=apache-spark&logoColor=white" alt="ETL">
+                <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                <img src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="GCP">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Section Projets -->
+<section id="projects" class="projects">
+    <h2>Projets</h2>
+    <div class="filter-buttons">
+        <button onclick="filterProjects('all')">Tous</button>
+        <button onclick="filterProjects('python')">Python</button>
+        <button onclick="filterProjects('sql')">SQL</button>
+        <button onclick="filterProjects('nlp')">NLP</button>
+    </div>
+    <div class="project-grid">
+        <!-- Projet 1 : Segmentation des abonnés de la Ligue 1 -->
+            <div class="project-card project-1" data-tech="python sql">
+            <img src="https://image.over-blog.com/njENmfOTRObRazbfCP8sfwn6DOA=/filters:no_upscale()/image%2F2132870%2F20230920%2Fob_ba7f44_lb190923-06.JPG" alt="Projet Ligue 1">
+            <h3>Segmentation des abonnés de la Ligue 1</h3>
+            <p>Optimisation de l'engagement client à travers une segmentation avancée des abonnés.</p>
+            <a href="https://github.com/Samadkod/Canalplus_Experiences_Data" target="_blank">Voir le projet</a>
+            <canvas id="ligue1Chart" width="400" height="200"></canvas>
+        </div>
+
+        <!-- Projet 2 : Catégorisation de produits -->
+        <div class="project-card project-2" data-tech="python nlp">
+            <img src="https://e-tailize.com/wp-content/uploads/2023/10/top-marketplace-for-furniture-1024x683.jpg" alt="Projet Catégorisation">
+            <h3>Catégorisation de produits</h3>
+            <p>Catégorisation automatique des produits à partir de descriptions textuelles.</p>
+            <a href="https://github.com/Samadkod/Cat-gorisation-de-produits" target="_blank">Voir le projet</a>
+            <canvas id="categorieChart" width="400" height="200"></canvas>
+        </div>
+
+        <!-- Projet 3 : Modélisation de l'Attrition -->
+        <div class="project-card project-3" data-tech="python">
+            <img src="https://dezyre.gumlet.io/images/blog/churn-models/Customer_Churn_Prediction_Models_in_Machine_Learning.png?w=800&dpr=1.0" alt="Projet Attrition">
+            <h3>Modélisation de l'Attrition</h3>
+            <p>Prédiction des départs clients pour améliorer la rétention.</p>
+            <a href="https://github.com/Samadkod/Canalplus_Experiences_Data" target="_blank">Voir le projet</a>
+            <canvas id="attritionChart" width="400" height="200"></canvas>
+        </div>
+
+        <!-- Projet 4 : Analyse Comportementale des Profils d'Assurés -->
+        <div class="project-card project-4" data-tech="python machine-learning">
+            <img src="https://cap.img.pmdstatic.net/fit/https.3A.2F.2Fi.2Epmdstatic.2Enet.2Fcap.2F2023.2F07.2F03.2Fff1a337e-fc84-4d25-bbfa-4d8b81839ec7.2Ejpeg/1200x630/cr/wqkgcm9uc3RpayAtIEFkb2JlIFN0b2NrIC8gQ0FQSVRBTA%3D%3D/assurance-auto-lecart-se-creuse-entre-lile-de-france-et-les-regions-1491314.jpg" alt="Analyse Comportementale des Profils d'Assurés">
+            <h3>Analyse Comportementale des Profils d'Assurés</h3>
+            <p>Optimisation des stratégies de tarification grâce à l'analyse des comportements des assurés.</p>
+            <a href="https://github.com/Samadkod/3.Projet-data_Assurance-auto" target="_blank">Voir le projet</a>
+            <canvas id="assuranceChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+</section>
+
+    <!-- Section Applications Streamlit -->
+<!-- Section Applications Streamlit -->
+<section id="streamlit-apps" class="streamlit-apps">
+  <h2>Applications Streamlit</h2>
+  <p style="text-align:center; max-width: 800px; margin: auto;">
+  Découvrez plusieurs applications interactives que j’ai conçues et déployées pour répondre à des besoins métiers concrets : pilotage RH, analyse de performance, suivi d’activité ou encore social listening.
+  <br><br>
+  Toutes sont accessibles en ligne et illustrent ma capacité à transformer les données en outils utiles, clairs et exploitables.
+  <br><br>
+  ⚠️ <em>Si l’application semble inactive, cliquez simplement sur “Yes, get this app back up!” – elle se relancera en quelques secondes.</em>
+</p>
+
+  <div class="app-grid">
+
+    <!-- App 1 : Pilotage Production -->
+    <div class="app-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4350/4350329.png" alt="Pilotage Production" style="width:100px; display:block; margin:auto;">
+      <h3>🏢 Pilotage Production – Organisme Public</h3>
+      <p>Application simulant un tableau de bord de production : délais, types de dossiers, performance par agence.</p>
+      <a href="https://pilotage-appuction-organisme-public-gnjpui2nu66lmc4ked96zl.streamlit.app/" target="_blank" class="button">Voir l'app</a>
+    </div>
+
+    <!-- App 2 : Pilotage RH -->
+    <div class="app-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3106/3106892.png" alt="Pilotage RH" style="width:100px; display:block; margin:auto;">
+      <h3>👥 Pilotage RH – Atelier de la Donnée</h3>
+      <p>Suivi interactif des effectifs, masse salariale, absences, turnover, avec visualisations claires et filtrables.</p>
+      <a href="https://pilotage-rh-app-fqob5xhyhj3b5wfwduz5vr.streamlit.app/" target="_blank" class="button">Explorer</a>
+    </div>
+
+    <!-- App 3 : Optimisation Assortiment -->
+    <div class="app-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4019/4019801.png" alt="Optimisation Assortiment" style="width:100px; display:block; margin:auto;">
+      <h3>🛒 Optimisation Assortiment – Retail</h3>
+      <p>Simulation de performance produit : CA, marge, élasticité promo. Recommandations : conserver, tester, retirer.</p>
+      <a href="https://app-optimisation-aapprtiment-fmcg-aaa2kax5ty2sjwjrjcsgsj.streamlit.app/" target="_blank" class="button">Voir l’outil</a>
+    </div>
+
+    <!-- App 4 : Social Listening Luxe -->
+    <div class="app-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Social Listening Luxe" style="width:100px; display:block; margin:auto;">
+      <h3>💬 Social Listening – Marques de Luxe</h3>
+      <p>Analyse des sentiments et thématiques à partir de mentions Twitter. Focus sur les marques luxe, visuel et interactif.</p>
+      <a href="https://social-listening-luxe-bjhqf4fartf8c3wqswcv7x.streamlit.app/" target="_blank" class="button">Découvrir</a>
+    </div>
+
+  </div>
+</section>
+
+   
+    <!-- Section Expérience -->
+    <section id="experience" class="experience">
+  <h2>Expérience Professionnelle</h2>
+
+  <div class="experience-item">
+    <h3>📊 Data Analyst – <strong>CANAL+</strong> (Stage de fin d'études)</h3>
+    <p><strong>Février 2024 – Août 2024</strong> · Paris (Siège Canal+ International)</p>
+    <ul>
+      <li>🎯 Création d’un modèle de churn prédictif (classification supervisée) pour détecter les abonnés à risque sur plusieurs segments.</li>
+      <li>⚙️ Automatisation des reportings récurrents avec Python & Datalku → temps de production divisé par 2.</li>
+      <li>📈 Conception de dashboards Power BI pour le pilotage des abonnements, taux d’engagement, cohortes d’utilisateurs.</li>
+      <li>🤝 Collaboration directe avec les équipes marketing, produit et direction sur les décisions stratégiques.</li>
+    </ul>
+  </div>
+
+  <div class="experience-item">
+    <h3>📍 Assistant Data Analyst – <strong>GOZEM</strong> (CDI)</h3>
+    <p><strong>Juin 2019 – Août 2021</strong> · Lomé (Togo)</p>
+    <ul>
+      <li>📊 Analyse comportementale de plus de 50 000 utilisateurs pour optimiser la segmentation et les actions marketing ciblées.</li>
+      <li>📥 Mise en place d’un système de reporting automatisé sous Google Sheets + Query → gain de temps hebdo significatif.</li>
+      <li>🤝 Travail transversal avec les équipes produit, data et communication sur l’évolution des services mobiles.</li>
+    </ul>
+  </div>
+</section>
+
+
+    <!-- Section Contact -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p style="text-align:center; max-width: 700px; margin: 0 auto 30px auto;">
+    Vous recherchez un Data Analyst polyvalent, opérationnel et orienté résultats ?
+    Je suis disponible immédiatement pour un CDI, CDD, mission freelance ou contrat pro – et prêt à échanger sur tout projet lié à la data, au reporting ou à l’analyse de performance.
+    <br><br>
+    📬 Contactez-moi via le formulaire ci-dessous, par email ou sur LinkedIn. Je vous réponds rapidement.
+  </p>
+
+  <form action="https://formspree.io/f/xnndeoon" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+  </form> 
+  <p id="form-confirmation" class="confirmation-message">Merci pour votre message ! Je reviendrai vers vous rapidement.</p>
+
+  <div class="contact-links">
+    <a href="mailto:samadou.kodon@example.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" style="width:40px; height:40px; margin: 5px;">
+    </a>
+    <a href="https://linkedin.com/in/skodon" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width:40px; height:40px; margin: 5px;">
+    </a>
+  </div>
+</section>
+
+
+    <!-- Bouton Retour en haut -->
+    <button onclick="scrollToTop()" class="scroll-to-top">↑</button>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Pape Semou NDAO</p>
+        <p>&copy; 2024 Samad Kodon. Tous droits réservés.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
